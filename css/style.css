@@ -2653,9 +2653,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   padding-left: 5px;  
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                 linh Style                                 */
-/* -------------------------------------------------------------------------- */
+/** -------------------------------------------------------------------------- */
+/*  !                               linh Style                                 */
+/** -------------------------------------------------------------------------- */
 .modal-backdrop {
   background-color: black !important;
 }
@@ -2776,6 +2776,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   .section{
     padding: 30px 0 !important;
   }
+  .modal-dialog{
+    margin: 0;
+  }
 }
 .menu{
   height: 78px;
@@ -2811,6 +2814,13 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 /*? Shopping Cart Style */
+
+/* shopping cart mobile */
+.shopping-cart-mobile{
+  float: right;
+  margin-right: 7px;
+}
+/* end */
 .fa-shopping-cart{
   color: #333;
 }
@@ -2818,7 +2828,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   position: fixed;
   z-index: 3999;
   right: 10px;
-  display: none;
 }
 .cart-hover{
   position: absolute;
@@ -2889,6 +2898,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   flex: 5;
 }
 .cart-count{
+  display: none;
   text-align: center;
   line-height: 27px;
   position: absolute;
@@ -2905,23 +2915,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 .show-cart-list{
   overflow-y: auto;
   max-height: 400px;
-}
-.buzz{
-	animation-name: buzz;
-	animation-duration: 0.1s;
-}
-@keyframes buzz{
-	0%{right: 4px}
-	10%{right: 0px}
-	20%{right: 4px}
-	30%{right: 0px}
-	40%{right: 4px}
-	50%{right: 0px}
-	60%{right: 4px}
-	70%{right: 0px}
-	80%{right: 4px}
-	90%{right: 0px}
-	100%{right: 4px}
 }
 @media (max-width: 768px){
   .dropdown-cart{
@@ -2941,6 +2934,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   .price-products,.quantity-products,.total-products,.delete-item{
     width: 100%;
     margin-top: 3px;
+  }
+  .shopping-cart{
+    display: none;
   }
 }
 /*? end shopping cart Style */

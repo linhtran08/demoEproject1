@@ -13,10 +13,10 @@ $(document).ready(function (){
             $('#myCarousel').fadeIn('slow');
         }
         if($(this).scrollTop()>750){
-            $('#row-new-arrival').slideDown(1000);
+            $('#row-new-arrival').show();
         }
         if($(this).scrollTop()>800){
-            $('#category-tittle').slideDown(1000);
+            $('#category-tittle').show();
         }
         if($(this).scrollTop()>900){
             $('.content').slideDown('slow');

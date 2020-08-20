@@ -30,7 +30,8 @@
 	<link rel="stylesheet" href="plugins/multi-level-dropdown-vegas-nav/dist/css/vgnav.css" />
 	<link rel="stylesheet" href="plugins/multi-level-dropdown-vegas-nav/dist/css/vgnav-theme.css" />
 	<!-- Main Stylesheet -->
-	<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body id="body">
@@ -80,10 +81,10 @@
 	<!-- Cart shopping -->
 	<section class="shopping-cart">
 		<div class="cart-hover">
-			<span class="cart-count"></span>
+			<span class="cart-count animate__animated animate__heartBeat"></span>
 			<a href="view-cart.html" data-toggle="dropdown"><i class="tf-ion-ios-cart-outline"
 					style="font-size: 50px;"></i></a>
-			<div class="dropdown-cart">
+			<div class="dropdown-cart animate__animated animate__fadeInRight animate__fast">
 				<div class="show-cart-list">
 					<div class="cart-list">
 						<div style="flex: 3;">
@@ -432,6 +433,10 @@
 	<!-- Menu for mobile-->
 	<div class="navigation mobile-nav">
 		<nav class="vg-nav vg-nav-sm">
+			<span class="shopping-cart-mobile" data-toggle="modal" data-target="#shopping-cart-modal">
+				<span class="cart-count animate__animated animate__heartBeat" style="top: 0; right: 65px; width: 20px; height: 20px;line-height: 20px;"></span>
+				<i class="tf-ion-ios-cart" style="font-size: 30px;"></i>
+			</span>
 			<a href="index.html" class="mobile-nav-brand">A1 Uniform</a>
 			<ul>
 				<h2><a href="index.html">A1 Uniform</a></h2>
@@ -641,6 +646,58 @@
 		</nav>
 	</div>
 	<!-- end menu mobile-->
+
+	<!--? modal for shopping-cart-mobile -->
+	<div class="modal product-modal fade" id="shopping-cart-modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<i class="tf-ion-close"></i>
+		</button>
+		<div class="modal-dialog animate__animated animate__backInDown" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="row" style="display: flex; flex-direction: column;">
+						<br>
+						<div class="show-cart-list">
+							<div class="cart-list">
+								<div style="flex: 3;">
+									<a class="pull-left" href="#">
+										<img class="media-object-cart" src="images/shop/cart/cart-2.jpg" alt="image" />
+									</a>
+								</div>
+								<div class="media-body-cart">
+									<h4 class="media-heading"><a href="">Ladies Bag</a></h4>
+									<div class="cart-price">
+										<span>1 x</span>
+										<span>1250.00</span>
+									</div>
+									<h5><strong>$1200</strong></h5>
+								</div>
+								<div style="flex: 1;">
+									<a href="#" class="remove"><i class="tf-ion-close"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-summary-total">
+							<div style="flex: 2; text-align: left;">Total :</div>
+							<div class="total-price" style="flex: 4; text-align: left;">
+								$17555
+							</div>
+							<div class="clear-cart btn btn-danger outline">Clear All</div>
+						</div>
+						<ul class="text-center cart-buttons">
+							<li>
+								<a href="view-cart.html" class="btn btn-small">View Cart</a>
+							</li>
+							<li>
+								<a href="checkout.html" class="btn btn-small btn-solid-border">Checkout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--? end -->
 
     <section class="page-header">
         <div class="container">
@@ -1732,7 +1789,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -1771,7 +1828,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -1811,7 +1868,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -1850,7 +1907,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -1890,7 +1947,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -1930,7 +1987,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -1970,7 +2027,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2011,7 +2068,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2052,7 +2109,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2094,7 +2151,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2136,7 +2193,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2177,7 +2234,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2218,7 +2275,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2258,7 +2315,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2299,7 +2356,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2339,7 +2396,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2380,7 +2437,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2420,7 +2477,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2460,7 +2517,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2501,7 +2558,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2542,7 +2599,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2585,7 +2642,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2627,7 +2684,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -2668,7 +2725,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3443,7 +3500,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3483,7 +3540,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3523,7 +3580,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3558,7 +3615,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3593,7 +3650,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3633,7 +3690,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3673,7 +3730,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3711,7 +3768,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3750,7 +3807,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3792,7 +3849,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3834,7 +3891,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3879,7 +3936,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3925,7 +3982,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -3966,7 +4023,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -4007,7 +4064,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -4052,7 +4109,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -4098,7 +4155,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -4138,7 +4195,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -4178,7 +4235,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -4217,7 +4274,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -4256,7 +4313,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -4293,7 +4350,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -4335,7 +4392,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -4376,7 +4433,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5153,7 +5210,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5193,7 +5250,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5233,7 +5290,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5268,7 +5325,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5303,7 +5360,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5343,7 +5400,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5383,7 +5440,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5421,7 +5478,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5460,7 +5517,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5502,7 +5559,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5544,7 +5601,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5589,7 +5646,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5635,7 +5692,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5676,7 +5733,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5717,7 +5774,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5762,7 +5819,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5808,7 +5865,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5848,7 +5905,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5888,7 +5945,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5927,7 +5984,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -5966,7 +6023,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6003,7 +6060,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6045,7 +6102,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6086,7 +6143,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6595,7 +6652,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6636,7 +6693,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6677,7 +6734,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6719,7 +6776,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6760,7 +6817,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6801,7 +6858,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6843,7 +6900,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6884,7 +6941,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6925,7 +6982,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tf-ion-close"></i>
                             </button>
-                            <div class="modal-dialog " role="document">
+                            <div class="modal-dialog animate__animated animate__backInDown " role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="row">
@@ -6966,7 +7023,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="tf-ion-close"></i>
                     </button>
-                    <div class="modal-dialog " role="document">
+                    <div class="modal-dialog animate__animated animate__backInDown " role="document">
                         <div class="modal-content">
                             <div class="modal-body">
                                 <div class="row">
@@ -7004,7 +7061,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="tf-ion-close"></i>
                     </button>
-                    <div class="modal-dialog " role="document">
+                    <div class="modal-dialog animate__animated animate__backInDown " role="document">
                         <div class="modal-content">
                             <div class="modal-body">
                                 <div class="row">
@@ -7042,7 +7099,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="tf-ion-close"></i>
                     </button>
-                    <div class="modal-dialog " role="document">
+                    <div class="modal-dialog animate__animated animate__backInDown " role="document">
                         <div class="modal-content">
                             <div class="modal-body">
                                 <div class="row">
@@ -7081,7 +7138,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <i class="tf-ion-close"></i>
                         </button>
-                        <div class="modal-dialog " role="document">
+                        <div class="modal-dialog animate__animated animate__backInDown " role="document">
                             <div class="modal-content">
                                 <div class="modal-body">
                                     <div class="row">
@@ -7120,7 +7177,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <i class="tf-ion-close"></i>
                         </button>
-                        <div class="modal-dialog " role="document">
+                        <div class="modal-dialog animate__animated animate__backInDown " role="document">
                             <div class="modal-content">
                                 <div class="modal-body">
                                     <div class="row">
@@ -7159,7 +7216,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <i class="tf-ion-close"></i>
                         </button>
-                        <div class="modal-dialog " role="document">
+                        <div class="modal-dialog animate__animated animate__backInDown " role="document">
                             <div class="modal-content">
                                 <div class="modal-body">
                                     <div class="row">

@@ -42,6 +42,7 @@
 	<link rel="stylesheet" href="plugins/multi-level-dropdown-vegas-nav/dist/css/vgnav-theme.css" />
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/index.css" />
 </head>
 
@@ -92,10 +93,10 @@
 	<!-- Cart shopping -->
 	<section class="shopping-cart">
 		<div class="cart-hover">
-			<span class="cart-count"></span>
+			<span class="cart-count animate__animated animate__heartBeat"></span>
 			<a href="view-cart.html" data-toggle="dropdown"><i class="tf-ion-ios-cart-outline"
 					style="font-size: 50px;"></i></a>
-			<div class="dropdown-cart">
+			<div class="dropdown-cart animate__animated animate__fadeInRight animate__fast">
 				<div class="show-cart-list">
 					<div class="cart-list">
 						<div style="flex: 3;">
@@ -444,6 +445,10 @@
 	<!-- Menu for mobile-->
 	<div class="navigation mobile-nav">
 		<nav class="vg-nav vg-nav-sm">
+			<span class="shopping-cart-mobile" data-toggle="modal" data-target="#shopping-cart-modal">
+				<span class="cart-count animate__animated animate__heartBeat" style="top: 0; right: 65px; width: 20px; height: 20px;line-height: 20px;"></span>
+				<i class="tf-ion-ios-cart" style="font-size: 30px;"></i>
+			</span>
 			<a href="index.html" class="mobile-nav-brand">A1 Uniform</a>
 			<ul>
 				<h2><a href="index.html">A1 Uniform</a></h2>
@@ -654,6 +659,57 @@
 	</div>
 	<!-- end menu mobile-->
 
+	<!--? modal for shopping-cart-mobile -->
+	<div class="modal product-modal fade" id="shopping-cart-modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<i class="tf-ion-close"></i>
+		</button>
+		<div class="modal-dialog animate__animated animate__backInDown" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="row" style="display: flex; flex-direction: column;">
+						<br>
+						<div class="show-cart-list">
+							<div class="cart-list">
+								<div style="flex: 3;">
+									<a class="pull-left" href="#">
+										<img class="media-object-cart" src="images/shop/cart/cart-2.jpg" alt="image" />
+									</a>
+								</div>
+								<div class="media-body-cart">
+									<h4 class="media-heading"><a href="">Ladies Bag</a></h4>
+									<div class="cart-price">
+										<span>1 x</span>
+										<span>1250.00</span>
+									</div>
+									<h5><strong>$1200</strong></h5>
+								</div>
+								<div style="flex: 1;">
+									<a href="#" class="remove"><i class="tf-ion-close"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-summary-total">
+							<div style="flex: 2; text-align: left;">Total :</div>
+							<div class="total-price" style="flex: 4; text-align: left;">
+								$17555
+							</div>
+							<div class="clear-cart btn btn-danger outline">Clear All</div>
+						</div>
+						<ul class="text-center cart-buttons">
+							<li>
+								<a href="view-cart.html" class="btn btn-small">View Cart</a>
+							</li>
+							<li>
+								<a href="checkout.html" class="btn btn-small btn-solid-border">Checkout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--? end -->
 	<!-- Slider Start -->
 	<section class="main-slider" style="clear: both;">
 		<div id="home_slider_wrapper" class="rev_slider_wrapper fullscreen-container">
@@ -954,8 +1010,7 @@
 												<a href="#" class="btn btn-primary add-to-cart"
 													data-name="Sock with Bicycle" data-price="20"
 													data-img="images/shop/category/bestSellers/sock1.jpg"
-													role="button">$ 20</a><a href="#" class="btn btn-default"
-													role="button">Wishlist</a>
+													role="button">$ 20</a>
 											</p>
 										</div>
 									</div>
@@ -975,7 +1030,7 @@
 													data-price="30"
 													data-img="images/shop/category/primary/boy/short1.png"
 													role="button">$ 30</a>
-												<a href="#" class="btn btn-default" role="button">Wishlist</a>
+												
 											</p>
 										</div>
 									</div>
@@ -996,7 +1051,7 @@
 													data-name="Short Sleeve Girls" data-price="25"
 													data-img="images/shop/category/bestSellers/shirt1.jpg"
 													role="button">$ 25</a>
-												<a href="#" class="btn btn-default" role="button">Wishlist</a>
+												
 											</p>
 										</div>
 									</div>
@@ -1016,7 +1071,7 @@
 													data-name="Long Sleeve Mesh Polo Shirtl" data-price="40"
 													data-img="images/shop/category/bestSellers/shirt2.jpg"
 													role="button">$ 40</a>
-												<a href="#" class="btn btn-default" role="button">Wishlist</a>
+												
 											</p>
 										</div>
 									</div>
@@ -1039,7 +1094,7 @@
 													data-price="20"
 													data-img="images/shop/category/bestSellers/frocks1.jpg"
 													role="button">$ 20</a>
-												<a href="#" class="btn btn-default" role="button">Wishlist</a>
+												
 											</p>
 										</div>
 									</div>
@@ -1055,7 +1110,7 @@
 													data-name="Boys Leather Belt" data-price="25"
 													data-img="images/shop/category/bestSellers/belt1.jpg"
 													role="button">$ 25</a>
-												<a href="#" class="btn btn-default" role="button">Wishlist</a>
+												
 											</p>
 										</div>
 									</div>
@@ -1075,7 +1130,7 @@
 													data-name="Girls Mesh Athletic Gym Shorts" data-price="40"
 													data-img="images/shop/category/bestSellers/short2.jpg"
 													role="button">$ 40</a>
-												<a href="#" class="btn btn-default" role="button">Wishlist</a>
+												
 											</p>
 										</div>
 									</div>
@@ -1095,7 +1150,7 @@
 													data-name="Summer School Uniform" data-price="23"
 													data-img="images/shop/category/bestSellers/frocks2.jpg"
 													role="button">$ 23</a>
-												<a href="#" class="btn btn-default" role="button">Wishlist</a>
+												
 											</p>
 										</div>
 									</div>
@@ -1116,7 +1171,7 @@
 													data-name="Student clothes new boysl" data-price="30"
 													data-img="images/shop/category/bestSellers/setboy1.jpg"
 													role="button">$ 30</a>
-												<a href="#" class="btn btn-default" role="button">Wishlist</a>
+												
 											</p>
 										</div>
 									</div>
@@ -1136,7 +1191,7 @@
 													data-name="indergarten Primary Kids Baby Girl" data-price="20"
 													data-img="images/shop/category/bestSellers/setgirl1.jpg"
 													role="button">$ 20</a>
-												<a href="#" class="btn btn-default" role="button">Wishlist</a>
+												
 											</p>
 										</div>
 									</div>
@@ -1156,7 +1211,7 @@
 													data-name="White Blouse Red Plaid Skirt Setl" data-price="30"
 													data-img="images/shop/category/bestSellers/setgirl2.jpg"
 													role="button">$ 30</a>
-												<a href="#" class="btn btn-default" role="button">Wishlist</a>
+												
 											</p>
 										</div>
 									</div>
@@ -1176,7 +1231,7 @@
 													data-name="Cotton Rich School Cardigan Cardi" data-price="40"
 													data-img="images/shop/category/bestSellers/shirt3.jpg"
 													role="button">$ 40</a>
-												<a href="#" class="btn btn-default" role="button">Wishlist</a>
+												
 											</p>
 										</div>
 									</div>
@@ -1203,30 +1258,30 @@
 	<!-- ------------------------ new arrival products ------------------------- -->
 	<section class="product-category section">
 		<div class="container" style="min-height: 859px;">
-			<div class="row" id="row-new-arrival" style="display: none;">
+			<div class="row animate__animated animate__fadeInUpBig" id="row-new-arrival" style="display: none;">
 				<div class="col-md-12">
-					<div class="title text-center" id="category-tittle" style="display: none;">
+					<div class="title text-center animate__animated animate__fadeInUpBig" id="category-tittle" style="display: none;">
 						<h2>New Arrival</h2>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="category-box" data-toggle="modal" data-target="#product-modal-new-BasketballUniforms">
-						<img src="images/shop/category/newArrival/category-1.jpg" alt="Basketball Uniforms" />
+						<img src="images/shop/category/newArrival/category-1.jpg" alt="Basketball Uniforms" style="cursor: pointer;" />
 						<div class="content new-content-products">
 							<h3>Latest Basketball Uniform</h3>
 						</div>
 					</div>
 					<div class="category-box" data-toggle="modal" data-target="#product-modal-new-kidsUniform">
-						<img src="images/shop/category/newArrival/category-2.jpg" alt="Kids Primary Uniforme" />
+						<img src="images/shop/category/newArrival/category-2.jpg" alt="Kids Primary Uniforme" style="cursor: pointer;" />
 						<div class="content new-content-products">
-							<h3>Kids Primary Uniforme Escolar Costume Girl</h3>
+							<h3>Kids Primary Uniform Escolar Costume Girl</h3>
 							<p>British korean japanese School</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6" data-toggle="modal" data-target="#product-modal-tuxVest">
 					<div class="category-box category-box-2">
-						<img src="images/shop/category/newArrival/category-3.jpg" alt="Tux Vest" />
+						<img src="images/shop/category/newArrival/category-3.jpg" alt="Tux Vest" style="cursor: pointer;" />
 						<div class="content new-content-products">
 							<h3>Blazer Jacket Tux Vest</h3>
 							<p>Special Design Comes First</p>
@@ -1241,7 +1296,7 @@
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<i class="tf-ion-close"></i>
 			</button>
-			<div class="modal-dialog" role="document">
+			<div class="modal-dialog animate__animated animate__backInDown" role="document">
 				<div class="modal-content">
 					<div class="modal-body">
 						<div class="row">
@@ -1276,7 +1331,7 @@
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<i class="tf-ion-close"></i>
 			</button>
-			<div class="modal-dialog" role="document">
+			<div class="modal-dialog animate__animated animate__backInDown" role="document">
 				<div class="modal-content">
 					<div class="modal-body">
 						<div class="row">
@@ -1312,7 +1367,7 @@
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<i class="tf-ion-close"></i>
 			</button>
-			<div class="modal-dialog" role="document">
+			<div class="modal-dialog animate__animated animate__backInDown" role="document">
 				<div class="modal-content">
 					<div class="modal-body">
 						<div class="row">
@@ -1551,7 +1606,7 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<i class="tf-ion-close"></i>
 					</button>
-					<div class="modal-dialog" role="document">
+					<div class="modal-dialog animate__animated animate__backInDown" role="document">
 						<div class="modal-content">
 							<div class="modal-body">
 								<div class="row">
@@ -1574,7 +1629,7 @@
 												easier, wear after wear, wash after wash.
 											</p>
 											<a href="cat-primary.html" class="btn btn-main add-to-cart"
-												data-name="Girl Short Sleeve Interlock Polo Shirt" data-price="250"
+												data-dismiss="modal" data-name="Girl Short Sleeve Interlock Polo Shirt" data-price="250"
 												data-img="images/shop/category/primary/girl/g-Shirt1.jpg">Add To
 												Cart</a>
 											<a href="product-single.html" class="btn btn-transparent">View Product
@@ -1590,7 +1645,7 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<i class="tf-ion-close"></i>
 					</button>
-					<div class="modal-dialog" role="document">
+					<div class="modal-dialog animate__animated animate__backInDown" role="document">
 						<div class="modal-content">
 							<div class="modal-body">
 								<div class="row">
@@ -1615,7 +1670,7 @@
 												Great details include reinforced shoulder seams,
 												smoothly taped neck seam and side vents.
 											</p>
-											<a href="cat-primary.html" class="btn btn-main add-to-cart" data-name="Girl Long Sleeve Feminine Fit Interlock Polo
+											<a href="cat-primary.html" class="btn btn-main add-to-cart" data-dismiss="modal" data-name="Girl Long Sleeve Feminine Fit Interlock Polo
 											Shirt" data-price="250" data-img="images/shop/category/primary/girl/g-Shirt2.jpg">Add To Cart</a>
 											<a href="product-single.html" class="btn btn-transparent">View Product
 												Details</a>
@@ -1630,7 +1685,7 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<i class="tf-ion-close"></i>
 					</button>
-					<div class="modal-dialog" role="document">
+					<div class="modal-dialog animate__animated animate__backInDown" role="document">
 						<div class="modal-content">
 							<div class="modal-body">
 								<div class="row">
@@ -1656,7 +1711,7 @@
 												softness.
 											</p>
 											<a href="primary-girl.html" class="btn btn-main add-to-cart"
-												data-name="Girl Short Essential T-shirt" data-price="250"
+												data-dismiss="modal" data-name="Girl Short Essential T-shirt" data-price="250"
 												data-img="images/shop/category/primary/girl/g-tshirt1.jpg">Add To
 												Cart</a>
 											<a href="product-single.html" class="btn btn-transparent">View Product
@@ -1672,7 +1727,7 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<i class="tf-ion-close"></i>
 					</button>
-					<div class="modal-dialog" role="document">
+					<div class="modal-dialog animate__animated animate__backInDown" role="document">
 						<div class="modal-content">
 							<div class="modal-body">
 								<div class="row">
@@ -1696,7 +1751,7 @@
 												activities.
 											</p>
 											<a href="primary-girl.html" class="btn btn-main add-to-cart"
-												data-name="Girl Mesh Gym Shorts" data-price="350"
+												data-dismiss="modal" data-name="Girl Mesh Gym Shorts" data-price="350"
 												data-img="images/shop/category/primary/girl/g-short1.jpg">Add To
 												Cart</a>
 											<a href="product-single.html" class="btn btn-transparent">View Product
@@ -1712,7 +1767,7 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<i class="tf-ion-close"></i>
 					</button>
-					<div class="modal-dialog" role="document">
+					<div class="modal-dialog animate__animated animate__backInDown" role="document">
 						<div class="modal-content">
 							<div class="modal-body">
 								<div class="row">
@@ -1734,7 +1789,7 @@
 												easier, wear after wear, wash after wash.
 											</p>
 											<a href="cat-primary.html" class="btn btn-main add-to-cart"
-												data-name="Secondary School Short Sleeve Interlock Polo Shirt"
+												data-dismiss="modal" data-name="Secondary School Short Sleeve Interlock Polo Shirt"
 												data-price="250"
 												data-img="images/shop/category/primary/boy/b-Shirt1.jpg">Add To Cart</a>
 											<a href="product-single.html" class="btn btn-transparent">View Product
@@ -1750,7 +1805,7 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<i class="tf-ion-close"></i>
 					</button>
-					<div class="modal-dialog" role="document">
+					<div class="modal-dialog animate__animated animate__backInDown" role="document">
 						<div class="modal-content">
 							<div class="modal-body">
 								<div class="row">
@@ -1775,7 +1830,7 @@
 												Great details include reinforced shoulder seams,
 												smoothly taped neck seam and side vents.
 											</p>
-											<a href="cat-primary.html" class="btn btn-main add-to-cart" data-name="Secondary School Long Sleeve Feminine Fit Interlock Polo
+											<a href="cat-primary.html" class="btn btn-main add-to-cart" data-dismiss="modal" data-name="Secondary School Long Sleeve Feminine Fit Interlock Polo
 											Shirt" data-price="250" data-img="images/shop/category/primary/boy/b-Shirt2.jpg">Add To Cart</a>
 											<a href="product-single.html" class="btn btn-transparent">View Product
 												Details</a>
@@ -1801,17 +1856,14 @@ Start Call To Action
 					<div class="title">
 						<h2>SUBSCRIBE TO NEWSLETTER</h2>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Fugiat, <br />
-							facilis numquam impedit ut sequi. Minus facilis vitae excepturi
-							sit laboriosam.
+							Get exclusive Offers and News
 						</p>
 					</div>
 					<div class="col-lg-6 col-md-offset-3">
 						<div class="input-group subscription-form">
-							<input type="text" class="form-control" placeholder="Enter Your Email Address" />
+							<input type="text" class="form-control" placeholder="Enter Your Email" />
 							<span class="input-group-btn">
-								<button class="btn btn-main" type="button">
+								<button class="btn btn-main" type="button" data-toggle="modal" data-target="#subscribe">
 									Subscribe Now!
 								</button>
 							</span>
@@ -1824,6 +1876,25 @@ Start Call To Action
 			<!-- End row -->
 		</div>
 		<!-- End container -->
+		<!-- modal subscribe -->
+		<div class="modal product-modal fade" id="subscribe">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<i class="tf-ion-close"></i>
+			</button>
+			<div class="modal-dialog modal-dialog-centered animate__animated animate__backInDown" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="row">
+							<div class="block text-center">
+								<i class="tf-ion-android-checkmark-circle" style="font-size:3em; color: lawngreen;"></i>
+							<h2 class="text-center">THANK YOU SUBSCRIBED</h2>
+							<a href="#" class="btn btn-main mt-20" data-dismiss="modal" >Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<!-- End section -->
 
