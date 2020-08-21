@@ -210,6 +210,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 .mt-50 {
   margin-top: 50px;
 }
+.mt-100 {
+  margin-top: 100px;
+}
 
 .w-100 {
   width: 100%;
@@ -3121,7 +3124,7 @@ input[type=number] {
   ==================================================================*/
 
   .about-shop{
-    background: url(/images/slider/yarn-and-scissors.jpg) no-repeat;
+    background: url(../images/slider/yarn-and-scissors.jpg) no-repeat;
     background-size: 100%;
     box-shadow: 0 10px 10px 0 lightslategray;
     position: relative;
@@ -3164,9 +3167,9 @@ input[type=number] {
     line-height: 2;
     font-size: large;
   }
-
-  #carousel-id{
-    width: 50%;
+  #carousel-id .carousel-control.left,#carousel-id .carousel-control.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
 /* ----------------------------------- end ---------------------------------- */
