@@ -485,7 +485,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   position: absolute;
   padding: 15px;
   border: 1px solid #ebebeb;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   transition: .3s all;
   position: absolute;
   display: block;
@@ -2480,7 +2480,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 .contact-details #map {
   width: 100%;
-  height: 300px;
+  height: 600px;
 }
 
 .contact-details .contact-short-info {
@@ -2797,7 +2797,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   box-shadow: 2px 2px 5px gray !important;
 }
 .new-content-products{
-  display: none;
   background-color: rgba(0, 0, 0, 0.3);
 }
 .new-content-products>h3,.new-content-products>p{
@@ -2853,7 +2852,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   width: 400px;
   padding: 5px;
   background-color: #fff;
-  box-shadow: 0 2px 4px gray;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   flex-direction: column;
   display: none;
 }
@@ -3051,10 +3050,14 @@ input[type=number] {
 }
 /* team Img */
 .team-member>img{
+  border: 10px solid white;
   width: 150px;
   height: 150px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+
+/*? ------------------------------- Maps Style ------------------------------- */
+
 /* ----------------------------- end linh style ----------------------------- */
 
 /*FOOTER START///////////////////*/

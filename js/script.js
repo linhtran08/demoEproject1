@@ -1,6 +1,5 @@
 (function ($) {
   "use strict";
-
   // Preloader
   $(window).on("load", function () {
     
@@ -36,7 +35,7 @@
     minute: 30,
   });
 
-  // navbar fixed scroll
+/* --------------------------- navbar fixed scroll -------------------------- */
   var height = $(".top-header").height();
   var heightScroll = height;
   $(window).scroll(function () {
@@ -57,8 +56,16 @@
       $(".navbar-brand").hide();
     }
   });
+
+/* ---------------------------- navbar for mobile --------------------------- */
   $(".vg-nav").vegasMenu();
 
+/* -------------------------------- carousel -------------------------------- */
+  $('#myCarousel').carousel({
+    interval : 4000
+    });
+
+  
   // Revolution Slider Init
   var tpj = jQuery;
   var revapi26;
@@ -532,3 +539,13 @@
 
   /* -------------------------- end shopping cart js -------------------------- */
 })(jQuery);
+$(document).ready(function(){
+  AOS.init(
+    {
+    easing: 'ease-out-back',
+    duration: 1000,
+    anchorPlacement: 'center-bottom',
+    once: true
+    }
+  );
+})

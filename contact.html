@@ -26,9 +26,11 @@
 	<!-- navbar mobile -->
 	<link rel="stylesheet" href="plugins/multi-level-dropdown-vegas-nav/dist/css/vgnav.css" />
 	<link rel="stylesheet" href="plugins/multi-level-dropdown-vegas-nav/dist/css/vgnav-theme.css" />
+	<!-- AOS Scroll -->
+	<link rel="stylesheet" href="plugins/aos-2/dist/aos.css">
 	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body id="body">
@@ -716,9 +718,60 @@
     <section class="page-wrapper">
       <div class="contact-section">
         <div class="container">
-          <div class="row">
+			<div class="row">
+				<div class="contact-details col-md-12">
+					<div class="google-map">
+					  <div id="map"></div>
+					</div>
+					<ul class="contact-short-info">
+					  <li>
+						<i class="tf-ion-ios-home"></i>
+						<span>590 Cach Mang Thang Tam, District 3, TPHCM</span>
+					  </li>
+					  <li>
+						<i class="tf-ion-android-phone-portrait"></i>
+						<span>Phone: +129-12323-123123</span>
+					  </li>
+					  <li>
+						<i class="tf-ion-android-globe"></i>
+						<span>Fax: +880-31-000-000</span>
+					  </li>
+					  <li>
+						<i class="tf-ion-android-mail"></i>
+						<span><a href="mailto:vaiolinh@outlook.com">a1uniform@store.com</a></span>
+					  </li>
+					</ul>
+					<!-- Footer Social Links -->
+					<div class="social-icon">
+					  <ul>
+						<li  data-aos="fade-up" data-aos-anchor-placement="top-bottom" >
+							<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li  data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+						  <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li  data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-bottom">
+						  <a href="https://www.instagram.com/"
+							><i class="fab fa-instagram-square"></i></a>
+						</li>
+						<li  data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+						  <a href="https://www.google.com/"
+							><i class="tf-ion-social-googleplus-outline"></i
+						  ></a>
+						</li>
+						<li  data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom">
+						  <a href="https://www.pinterest.com"
+							><i class="tf-ion-social-pinterest-outline"></i
+						  ></a>
+						</li>
+					  </ul>
+					</div>
+					<!--/. End Footer Social Links -->
+				  </div>
+			</div>
+          <div class="row mt-100">
             <!-- Contact Form -->
-            <div class="contact-form col-md-6">
+            <div class="contact-form col-md-12">
               <form
                 id="contact-form"
                 action="confirmation-contact.html"
@@ -787,61 +840,10 @@
             <!-- ./End Contact Form -->
 
             <!-- Contact Details -->
-            <div class="contact-details col-md-6">
-              <div class="google-map">
-                <div id="map"></div>
-              </div>
-              <ul class="contact-short-info">
-                <li>
-                  <i class="tf-ion-ios-home"></i>
-                  <span>590 Cach Mang Thang Tam, District 3, TPHCM</span>
-                </li>
-                <li>
-                  <i class="tf-ion-android-phone-portrait"></i>
-                  <span>Phone: +129-12323-123123</span>
-                </li>
-                <li>
-                  <i class="tf-ion-android-globe"></i>
-                  <span>Fax: +880-31-000-000</span>
-                </li>
-                <li>
-                  <i class="tf-ion-android-mail"></i>
-                  <span><a href="mailto:vaiolinh@outlook.com">a1uniform@store.com</a></span>
-                </li>
-              </ul>
-              <!-- Footer Social Links -->
-              <div class="social-icon">
-                <ul>
-                  <li>
-                    <a class="fb-icon" href="#"
-                      ><i class="tf-ion-social-facebook"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="tf-ion-social-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="tf-ion-social-dribbble-outline"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="tf-ion-social-googleplus-outline"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="tf-ion-social-pinterest-outline"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-              <!--/. End Footer Social Links -->
-            </div>
+
             <!-- / End Contact Details -->
           </div>
-          <!-- end row -->
+		  <!-- end row -->
         </div>
         <!-- end container -->
       </div>
@@ -924,8 +926,9 @@
     <!-- Video Lightbox Plugin -->
     <script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
     <!-- Count Down Js -->
-    <script src="plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
-
+	<script src="plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
+	<!-- AOS Scroll  -->
+	<script src="plugins/aos-2/dist/aos.js"></script>
     <!-- googlemap -->
     <script type="text/javascript" src="plugins/google-map/gmap.js"></script>
     <script
@@ -935,6 +938,5 @@
     ></script>
     <!-- Main Js File -->
     <script src="js/script.js"></script>
-    <script src="js/home.js"></script>
   </body>
 </html>
