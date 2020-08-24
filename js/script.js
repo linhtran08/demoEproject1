@@ -544,7 +544,7 @@ $(document).ready(function(){
     {
     easing: 'ease-out-back',
     duration: 1000,
-    anchorPlacement: 'center-bottom',
+    anchorPlacement: 'top-bottom',
     once: true
     }
   );

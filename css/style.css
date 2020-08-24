@@ -2659,6 +2659,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 /** -------------------------------------------------------------------------- */
 /*  !                               linh Style                                 */
 /** -------------------------------------------------------------------------- */
+.search-dropdown{
+  top: 20px !important;
+}
 .modal-backdrop {
   background-color: black !important;
 }
@@ -2690,6 +2693,8 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   border-top: 2px solid #262626;
   border-bottom: 2px solid #262626;
   transform: scaleY(2);
+  -webkit-transform: scaleY(2);
+  -moz-transform: scaleY(2);
   opacity: 0;
   transition: 0.5s;
 }
@@ -2702,6 +2707,8 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   height: 100%;
   background-color: #262626;
   transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
   opacity: 0;
   transition: 0.5s;
   z-index: -1;
@@ -2711,10 +2718,14 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 .navigation .navbar-nav > li> a:hover:before {
   transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
   opacity: 1;
 }
 .navigation .navbar-nav > li> a:hover:after {
   transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
   opacity: 1;
 }
 .navigation .navbar-nav > .dropdown:hover >a{
@@ -2946,25 +2957,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 /* todo button style */
 .btn-main{
   position: relative;
-  background-color: white;
-  color: #262626;
+  background-color:#262626;
+  color:rgb(247, 247, 247);
   border: 1px solid #262626;
   transition: 0.7s;
-}
-.btn-main::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-top: 2px solid #262626;
-  border-bottom: 2px solid #262626;
-  transform: scaleY(0);
-  -webkit-transform: scaleY(0);
-  -moz-transform: scaleY(0);
-  opacity: 0;
-  transition: 0.5s;
 }
 .btn-main::after {
   content: "";
@@ -2973,28 +2969,23 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #262626;
-  transform: scaleY(0);
-  -webkit-transform: scaleY(0);
-  -moz-transform: scaleY(0);
+  background-color:rgba(255, 255, 255, 0.2);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
   opacity: 0;
   transition: 0.5s;
-  z-index: -1;
-}
-.btn-main:hover:before {
-  transform: scaleY(1);
-  -webkit-transform: scaleY(1);
-  -moz-transform: scaleY(1);
-  opacity: 1;
+  z-index: 999;
+  border-radius:50%;
 }
 .btn-main:hover:after {
-  transform: scaleY(1);
-  -webkit-transform: scaleY(1);
-  -moz-transform: scaleY(1);
+  transform: scaleY(4);
+  -webkit-transform: scaleY(4);
+  -moz-transform: scaleY(4);
   opacity: 1;
 }
 .btn-main:hover{
-  opacity: 0.9;
+  color: white;
 }
 /* todo end button style */
 
@@ -3048,7 +3039,8 @@ input[type=number] {
   border-radius: 10px;
   background-color: #ffffff;
 }
-/* team Img */
+
+/*? -------------------------------- team Img -------------------------------- */
 .team-member>img{
   border: 10px solid white;
   width: 150px;
