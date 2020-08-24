@@ -2659,8 +2659,16 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 /** -------------------------------------------------------------------------- */
 /*  !                               linh Style                                 */
 /** -------------------------------------------------------------------------- */
-.search-dropdown{
-  top: 20px !important;
+.openG{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width : 768px ){
+  .openG{
+    margin-top: 20px;
+    justify-content: center;
+  }
 }
 .modal-backdrop {
   background-color: black !important;
