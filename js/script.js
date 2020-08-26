@@ -350,7 +350,7 @@
           "<a class='pull-left' href='#'>" +
           "<img class='media-object-cart' src='" +
           cartArray[i].img +
-          "' alt='image' />" +
+          "' alt='product image' />" +
           "</a>" +
           "</div>" +
           "<div class='media-body-cart'>" +
@@ -391,7 +391,7 @@
           "<a class='pull-left' href='#'>" +
           "<img class='media-object-cart' src='" +
           cartArray[i].img +
-          "' alt='image' />" +
+          "' alt='product image' />" +
           "</a>" +
           "</div>" +
           "<div class='media-body-cart'>" +
